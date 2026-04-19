@@ -193,6 +193,17 @@ flowchart TD
 
 ---
 
+## 📈 Key Metrics & Impact
+
+- **Data ingestion latency**: < 5 seconds
+- **Volunteer matching time**: < 30 seconds
+- **System uptime**: 99.9% SLA
+- **Volunteer-to-task match accuracy**: 87%+
+- **Coverage radius**: Up to 50 volunteers per critical incident
+
+---
+
+
 ## 🔄 Data Processing Pipeline
 
 ```mermaid
@@ -245,6 +256,19 @@ flowchart LR
 ```
 
 ---
+
+---
+
+## 🔐 Security & Privacy
+
+- **Data encryption**: AES-256 at rest, TLS 1.3 in transit
+- **Authentication**: OAuth 2.0 + JWT tokens
+- **Compliance**: GDPR, CCPA, local regulations
+- **Audit logs**: All data access tracked and encrypted
+- **Volunteer consent**: Explicit opt-in for location tracking
+
+---
+
 
 ## 🧠 AI/ML Analysis Pipeline
 
@@ -562,26 +586,6 @@ cd web
 npm install
 npm start
 ```
-
----
-
-## 📈 Key Metrics & Impact
-
-- **Data ingestion latency**: < 5 seconds
-- **Volunteer matching time**: < 30 seconds
-- **System uptime**: 99.9% SLA
-- **Volunteer-to-task match accuracy**: 87%+
-- **Coverage radius**: Up to 50 volunteers per critical incident
-
----
-
-## 🔐 Security & Privacy
-
-- **Data encryption**: AES-256 at rest, TLS 1.3 in transit
-- **Authentication**: OAuth 2.0 + JWT tokens
-- **Compliance**: GDPR, CCPA, local regulations
-- **Audit logs**: All data access tracked and encrypted
-- **Volunteer consent**: Explicit opt-in for location tracking
 
 ---
 
