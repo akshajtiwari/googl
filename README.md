@@ -587,26 +587,16 @@ npm start
 
 ---
 
-## 🤝 Contributing
+### <div><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png" alt="Globe with Meridians Emoji" width="30px" align="center" /> Let's Stay Connected:</div>
 
-We welcome contributions! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ansh%20Gaur%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-gaur-46b7a4378/) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Shukla%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-shukla-877705285/?skipRedirect=true) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ananya%20Gupta%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ananya-gupta-415658339/) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush%20Srivastava%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srivastavaaarush/) 
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
----
-
-## 🎓 Acknowledgments
-
-Built with ❤️ by volunteers, for volunteers. Special thanks to NGOs, field workers, and crisis responders who informed this platform's design.
-
----
 
 **Last Updated**: April 2026  
-**Maintained by**: [Your Team Name]  
-**Status**: 🟢 Production Ready
+**Maintained by**: [Echloen]  
+**Status**: 🟢 Prototype Ready
