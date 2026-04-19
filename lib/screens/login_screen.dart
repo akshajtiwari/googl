@@ -34,6 +34,8 @@ class _LoginScreenState extends State<LoginScreen> {
         password: password,
       );
 
+      if (!mounted) return;
+
       //  FIXED NAVIGATION → GO TO DASHBOARD
       Navigator.pushAndRemoveUntil(
         context,
@@ -41,12 +43,12 @@ class _LoginScreenState extends State<LoginScreen> {
         (route) => false,
       );
     } on FirebaseAuthException catch (e) {
-      showError(getErrorMessage(e));
+      if (mounted) showError(getErrorMessage(e));
     } catch (e) {
-      showError("Something went wrong");
+      if (mounted) showError("Something went wrong");
     }
 
-    setState(() => isLoading = false);
+    if (mounted) setState(() => isLoading = false);
   }
 
   // CLEAN ERROR MESSAGES
