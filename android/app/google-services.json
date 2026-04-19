@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "829969820747",
+    "project_id": "helpora-69cfa",
+    "storage_bucket": "helpora-69cfa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829969820747:android:c5e07e537816c516c1b1ce",
+        "android_client_info": {
+          "package_name": "com.example.helpora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-LGAjIAALYQY3xkyrFu8dY7EotL4R78Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
