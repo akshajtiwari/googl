@@ -127,13 +127,7 @@ class _SidebarState extends State<Sidebar> {
             current: widget.currentRoute,
             collapsed: isCollapsed,
           ),
-          _NavItem(
-            icon: Icons.assignment,
-            label: 'Assignments',
-            route: '/assignments',
-            current: widget.currentRoute,
-            collapsed: isCollapsed,
-          ),
+         
           _NavItem(
             icon: Icons.report_problem,
             label: 'Needs',
@@ -159,20 +153,21 @@ class _SidebarState extends State<Sidebar> {
           const Spacer(),
 
           /// FOOTER
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Row(
-              children: [
-                if (!isCollapsed)
-                  const Text(
-                    "v1.0",
-                    style: TextStyle(color: Colors.white38, fontSize: 12),
-                  ),
-                const Spacer(),
-                const Icon(Icons.settings, color: Colors.white38, size: 18),
-              ],
-            ),
-          )
+        // ✅ WITH THIS
+_NavItem(
+  icon: Icons.settings,
+  label: 'Settings',
+  route: AppRoutes.settings,
+  current: widget.currentRoute,
+  collapsed: isCollapsed,
+),
+Padding(
+  padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+  child: isCollapsed
+      ? const SizedBox()
+      : const Text("v1.0",
+          style: TextStyle(color: Colors.white38, fontSize: 12)),
+),
         ],
       ),
     );
