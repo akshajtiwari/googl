@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Install Flutter
-git clone https://github.com/flutter/flutter.git -b stable
+# Faster clone
+git clone https://github.com/flutter/flutter.git -b stable --depth 1
 export PATH="$PATH:$(pwd)/flutter/bin"
 
-# Enable web
 flutter config --enable-web
-
-# Install dependencies
 flutter pub get
 
-# Build web
-flutter build web --release
+# 🔥 reduce bundle size
+flutter build web --release --web-renderer canvaskit
