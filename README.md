@@ -599,16 +599,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
-## 📚 Documentation
-
-- [Architecture Deep Dive](docs/architecture.md)
-- [API Reference](docs/api.md)
-- [Deployment Guide](docs/deployment.md)
-- [ML Model Documentation](docs/ml-models.md)
-
----
-
-
 ## 🎓 Acknowledgments
 
 Built with ❤️ by volunteers, for volunteers. Special thanks to NGOs, field workers, and crisis responders who informed this platform's design.
