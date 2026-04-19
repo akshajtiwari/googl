@@ -582,6 +582,7 @@ npm start
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-LeeChristmas-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/AnkitShukla-arch)
-[![GitHub](https://img.shields.io/badge/GitHub-100axe001-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/100axe001)
 [![GitHub](https://img.shields.io/badge/GitHub-AkshajTiwari-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/akshajtiwari/akshajtiwari)
 [![GitHub](https://img.shields.io/badge/GitHub-Aniruddh69-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/still-trying)
+[![GitHub](https://img.shields.io/badge/GitHub-100axe001-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/100axe001)
+
