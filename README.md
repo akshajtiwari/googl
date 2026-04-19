@@ -4,7 +4,6 @@
 
 ![gifgithub](https://github.com/user-attachments/assets/54dc1f7a-f327-43ab-ae9c-58c7421eee39)
 
-<div align="center">
 
 ### **FRONTEND**
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -67,7 +66,6 @@
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Encryption-2ECC71?style=for-the-badge" />
 
-</div>
 
 # 🚨 Crisis Response & Volunteer Coordination Platform
 
