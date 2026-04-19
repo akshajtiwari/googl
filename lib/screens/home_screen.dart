@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.pop(context);
                       final picked = await picker.pickImage(
                           source: ImageSource.camera);
+                      if (!mounted) return;
                       if (picked != null) {
                         setState(() => _image = File(picked.path));
                       }
@@ -49,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Navigator.pop(context);
                       final picked = await picker.pickImage(
                           source: ImageSource.gallery);
+                      if (!mounted) return;
                       if (picked != null) {
                         setState(() => _image = File(picked.path));
                       }
@@ -88,6 +90,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
       final downloadUrl = await ref.getDownloadURL();
 
+      if (!mounted) return;
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text("Upload Successful")),
       );
@@ -96,12 +100,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
       setState(() => _image = null); // reset after upload
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Error: $e")),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Error: $e")),
+        );
+      }
     }
 
-    setState(() => isUploading = false);
+    if (mounted) setState(() => isUploading = false);
   }
 
   @override

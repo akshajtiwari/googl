@@ -24,6 +24,8 @@ class DashboardScreen extends StatelessWidget {
             onPressed: () async {
               await auth.logout();
 
+              if (!context.mounted) return;
+
               Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (_) => LoginScreen()),
