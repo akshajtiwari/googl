@@ -5,16 +5,85 @@
 
 ![gifgithub](https://github.com/user-attachments/assets/54dc1f7a-f327-43ab-ae9c-58c7421eee39)
 
-<div align="centre">
-  
-![Stack](https://img.shields.io/badge/FRONTEND-Flutter_React_D3.js-blue?style=for-the-badge) 
-![Stack](https://img.shields.io/badge/BACKEND-Node_Django_Spring-green?style=for-the-badge) 
-![Stack](https://img.shields.io/badge/AI-TensorFlow_spaCy_scikit--learn-red?style=for-the-badge) 
-![Stack](https://img.shields.io/badge/DATABASE-Firestore_BigQuery-yellow?style=for-the-badge) 
-![Stack](https://img.shields.io/badge/DEVOPS-Docker_K8s_CI/CD-purple?style=for-the-badge)
-  
+<div align="center">
+
+<!-- FRONTEND -->
+<img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+
+<br><br>
+
+<!-- BACKEND -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+
+<br><br>
+
+<!-- DATABASE & STORAGE -->
+<img src="https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+<img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_Cloud_Storage-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS_S3-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+
+<br><br>
+
+<!-- APIs & MESSAGING -->
+<img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+<img src="https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka" />
+<img src="https://img.shields.io/badge/Google_Pub/Sub-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Firebase_Realtime-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+
+<br><br>
+
+<!-- AI / ML -->
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/NLTK-154F5B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/Vertex_AI-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_Cloud_AI-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/Prophet-005571?style=for-the-badge" />
+<img src="https://img.shields.io/badge/LSTM-8E44AD?style=for-the-badge" />
+
+<br><br>
+
+<!-- DEVOPS -->
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" />
+<img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
+
+<br><br>
+
+<!-- MONITORING -->
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" />
+<img src="https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white" />
+<img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" />
+
+<br><br>
+
+<!-- SUPPORTING -->
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+<img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" />
+<img src="https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white" />
+<img src="https://img.shields.io/badge/OAuth_2.0-3C3C3D?style=for-the-badge" />
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Encryption-2ECC71?style=for-the-badge" />
+
 </div>
-  
+
 # 🚨 Crisis Response & Volunteer Coordination Platform
 
 **Real-time intelligent matching system that connects verified volunteers to critical needs during crises.**
