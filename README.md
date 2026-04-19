@@ -6,7 +6,6 @@
 ![gifgithub](https://github.com/user-attachments/assets/54dc1f7a-f327-43ab-ae9c-58c7421eee39)
 
 
-
 # 🚨 Crisis Response & Volunteer Coordination Platform
 
 **Real-time intelligent matching system that connects verified volunteers to critical needs during crises.**
@@ -101,12 +100,32 @@ flowchart TD
     Q --> S
     R --> S
     
-    style intake fill:#b3e5fc
-    style processing fill:#c8e6c9
-    style analysis fill:#ffe0b2
-    style storage fill:#f8bbd0
-    style coordination fill:#d1c4e9
-    style visualization fill:#c5cae9
+    style intake fill:#0277bd,stroke:#01579b,color:#fff
+    style processing fill:#00796b,stroke:#004d40,color:#fff
+    style analysis fill:#d84315,stroke:#bf360c,color:#fff
+    style storage fill:#c2185b,stroke:#880e4f,color:#fff
+    style coordination fill:#512da8,stroke:#311b92,color:#fff
+    style visualization fill:#283593,stroke:#1a237e,color:#fff
+    
+    style A fill:#81d4fa,stroke:#01579b,color:#000
+    style B fill:#81d4fa,stroke:#01579b,color:#000
+    style C fill:#81d4fa,stroke:#01579b,color:#000
+    style D fill:#81d4fa,stroke:#01579b,color:#000
+    style E fill:#4db6ac,stroke:#004d40,color:#000
+    style F fill:#4db6ac,stroke:#004d40,color:#000
+    style G fill:#4db6ac,stroke:#004d40,color:#000
+    style H fill:#ff8a65,stroke:#bf360c,color:#000
+    style I fill:#ff8a65,stroke:#bf360c,color:#000
+    style J fill:#ff8a65,stroke:#bf360c,color:#000
+    style K fill:#f48fb1,stroke:#880e4f,color:#000
+    style L fill:#f48fb1,stroke:#880e4f,color:#000
+    style M fill:#f48fb1,stroke:#880e4f,color:#000
+    style N fill:#7c4dff,stroke:#311b92,color:#fff
+    style O fill:#7c4dff,stroke:#311b92,color:#fff
+    style P fill:#7c4dff,stroke:#311b92,color:#fff
+    style Q fill:#536dfe,stroke:#1a237e,color:#fff
+    style R fill:#536dfe,stroke:#1a237e,color:#fff
+    style S fill:#536dfe,stroke:#1a237e,color:#fff
 ```
 
 ---
@@ -145,11 +164,21 @@ flowchart LR
     E --> G --> I
     E --> H --> I
     
-    style raw fill:#ffecb3
-    style nlp fill:#ffe082
-    style extraction fill:#ffd54f
-    style validation fill:#ffca28
-    style storage fill:#fbc02d
+    style raw fill:#ff9800,stroke:#e65100,color:#fff
+    style nlp fill:#2196f3,stroke:#0d47a1,color:#fff
+    style extraction fill:#4caf50,stroke:#1b5e20,color:#fff
+    style validation fill:#9c27b0,stroke:#4a148c,color:#fff
+    style storage fill:#f44336,stroke:#b71c1c,color:#fff
+    
+    style A fill:#ffb74d,stroke:#e65100,color:#000
+    style B fill:#64b5f6,stroke:#0d47a1,color:#000
+    style C fill:#64b5f6,stroke:#0d47a1,color:#000
+    style D fill:#64b5f6,stroke:#0d47a1,color:#000
+    style E fill:#81c784,stroke:#1b5e20,color:#000
+    style F fill:#ce93d8,stroke:#4a148c,color:#000
+    style G fill:#ce93d8,stroke:#4a148c,color:#000
+    style H fill:#ce93d8,stroke:#4a148c,color:#000
+    style I fill:#ef5350,stroke:#b71c1c,color:#fff
 ```
 
 ---
@@ -200,10 +229,25 @@ flowchart TD
     K --> L
     L --> N
     
-    style input fill:#c8e6c9
-    style ml fill:#b39ddb
-    style logic fill:#ffb74d
-    style output fill:#ef9a9a
+    style input fill:#00897b,stroke:#004d40,color:#fff
+    style ml fill:#6a1b9a,stroke:#38006b,color:#fff
+    style logic fill:#e65100,stroke:#bf360c,color:#fff
+    style output fill:#c62828,stroke:#b71c1c,color:#fff
+    
+    style A fill:#4db6ac,stroke:#004d40,color:#000
+    style B fill:#4db6ac,stroke:#004d40,color:#000
+    style C fill:#4db6ac,stroke:#004d40,color:#000
+    style D fill:#4db6ac,stroke:#004d40,color:#000
+    style E fill:#ba68c8,stroke:#38006b,color:#000
+    style F fill:#ba68c8,stroke:#38006b,color:#000
+    style G fill:#ba68c8,stroke:#38006b,color:#000
+    style H fill:#ffb74d,stroke:#bf360c,color:#000
+    style I fill:#ffb74d,stroke:#bf360c,color:#000
+    style J fill:#ffb74d,stroke:#bf360c,color:#000
+    style K fill:#ffb74d,stroke:#bf360c,color:#000
+    style L fill:#ef5350,stroke:#b71c1c,color:#fff
+    style M fill:#ef5350,stroke:#b71c1c,color:#fff
+    style N fill:#ef5350,stroke:#b71c1c,color:#fff
 ```
 
 ---
@@ -264,11 +308,30 @@ flowchart TD
     I --> J
     J --> K --> L
     
-    style needs fill:#ffccbc
-    style volunteers fill:#c5cae9
-    style matching fill:#ffe0b2
-    style allocation fill:#c8e6c9
-    style feedback fill:#b2dfdb
+    style needs fill:#d32f2f,stroke:#b71c1c,color:#fff
+    style volunteers fill:#1976d2,stroke:#0d47a1,color:#fff
+    style matching fill:#f57c00,stroke:#e65100,color:#fff
+    style allocation fill:#388e3c,stroke:#1b5e20,color:#fff
+    style feedback fill:#0097a7,stroke:#006064,color:#fff
+    
+    style A fill:#f44336,stroke:#b71c1c,color:#fff
+    style A1 fill:#f44336,stroke:#b71c1c,color:#fff
+    style A2 fill:#f44336,stroke:#b71c1c,color:#fff
+    style A3 fill:#f44336,stroke:#b71c1c,color:#fff
+    style B fill:#1e88e5,stroke:#0d47a1,color:#fff
+    style B1 fill:#1e88e5,stroke:#0d47a1,color:#fff
+    style B2 fill:#1e88e5,stroke:#0d47a1,color:#fff
+    style B3 fill:#1e88e5,stroke:#0d47a1,color:#fff
+    style C fill:#ffb74d,stroke:#e65100,color:#000
+    style D fill:#ffb74d,stroke:#e65100,color:#000
+    style E fill:#ffb74d,stroke:#e65100,color:#000
+    style F fill:#ffb74d,stroke:#e65100,color:#000
+    style G fill:#66bb6a,stroke:#1b5e20,color:#000
+    style H fill:#66bb6a,stroke:#1b5e20,color:#000
+    style I fill:#66bb6a,stroke:#1b5e20,color:#000
+    style J fill:#4dd0e1,stroke:#006064,color:#000
+    style K fill:#4dd0e1,stroke:#006064,color:#000
+    style L fill:#4dd0e1,stroke:#006064,color:#000
 ```
 
 ---
@@ -318,10 +381,23 @@ flowchart TD
     H --> K
     G --> L
     
-    style sources fill:#b3e5fc
-    style processing fill:#c8e6c9
-    style dashboards fill:#fff9c4
-    style frontend fill:#ffccbc
+    style sources fill:#1565c0,stroke:#0d47a1,color:#fff
+    style processing fill:#00796b,stroke:#004d40,color:#fff
+    style dashboards fill:#f57f17,stroke:#e65100,color:#fff
+    style frontend fill:#c62828,stroke:#b71c1c,color:#fff
+    
+    style A fill:#42a5f5,stroke:#0d47a1,color:#000
+    style B fill:#42a5f5,stroke:#0d47a1,color:#000
+    style C fill:#42a5f5,stroke:#0d47a1,color:#000
+    style D fill:#4db6ac,stroke:#004d40,color:#000
+    style E fill:#4db6ac,stroke:#004d40,color:#000
+    style F fill:#4db6ac,stroke:#004d40,color:#000
+    style G fill:#ffd54f,stroke:#e65100,color:#000
+    style H fill:#ffd54f,stroke:#e65100,color:#000
+    style I fill:#ffd54f,stroke:#e65100,color:#000
+    style J fill:#ef5350,stroke:#b71c1c,color:#fff
+    style K fill:#ef5350,stroke:#b71c1c,color:#fff
+    style L fill:#ef5350,stroke:#b71c1c,color:#fff
 ```
 
 ---
@@ -513,19 +589,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) file for details.
-
----
-
-## 🙌 Support & Community
-
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/yourorg/crisis-response-platform/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourorg/crisis-response-platform/discussions)
-- **Email**: team@crisisresponse.org
-
----
 
 ## 🎓 Acknowledgments
 
