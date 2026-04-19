@@ -107,9 +107,9 @@ class _SidebarState extends State<Sidebar> {
 
           /// NAV ITEMS
           _NavItem(
-            icon: Icons.dashboard,
-            label: 'Dashboard',
-            route: AppRoutes.dashboard,
+            icon: Icons.assignment_ind,
+            label: 'Assignments',
+            route: AppRoutes.assignments,
             current: widget.currentRoute,
             collapsed: isCollapsed,
           ),
