@@ -257,8 +257,6 @@ flowchart LR
 
 ---
 
----
-
 ## 🔐 Security & Privacy
 
 - **Data encryption**: AES-256 at rest, TLS 1.3 in transit
