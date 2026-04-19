@@ -575,13 +575,13 @@ npm start
 ### <div><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png" alt="Globe with Meridians Emoji" width="30px" align="center" /> Let's Stay Connected:</div>
 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ansh%20Gaur%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ansh-gaur-46b7a4378/) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Shukla%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-shukla-877705285/?skipRedirect=true) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ananya%20Gupta%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ananya-gupta-415658339/) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ansh%20Gaur%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshaj-tiwari/) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ananya%20Gupta%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aniruddh-srivastav-058312365) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush%20Srivastava%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srivastavaaarush/) 
 
 
-
-**Last Updated**: April 2026  
-**Maintained by**: [Echloen]  
-**Status**: 🟢 Prototype Ready
+[![GitHub](https://img.shields.io/badge/GitHub-LeeChristmas-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/AnkitShukla-arch)
+[![GitHub](https://img.shields.io/badge/GitHub-100axe001-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/100axe001)
+[![GitHub](https://img.shields.io/badge/GitHub-ananya6042-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/akshajtiwari/akshajtiwari)
+[![GitHub](https://img.shields.io/badge/GitHub-LeeChristmas-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/still-trying)
