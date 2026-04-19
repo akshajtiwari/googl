@@ -586,3 +586,7 @@ npm start
 [![GitHub](https://img.shields.io/badge/GitHub-Aniruddh69-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/still-trying)
 [![GitHub](https://img.shields.io/badge/GitHub-100axe001-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/100axe001)
 
+❤️
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=50&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=1000&lines=Made+with+❤️
++by+Echloen" alt="Typing SVG">
