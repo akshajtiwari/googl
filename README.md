@@ -5,6 +5,11 @@
 
 ![gifgithub](https://github.com/user-attachments/assets/54dc1f7a-f327-43ab-ae9c-58c7421eee39)
 
+![Stack](https://img.shields.io/badge/FRONTEND-Flutter_React_D3.js-blue?style=for-the-badge) 
+![Stack](https://img.shields.io/badge/BACKEND-Node_Django_Spring-green?style=for-the-badge) 
+![Stack](https://img.shields.io/badge/AI-TensorFlow_spaCy_scikit--learn-red?style=for-the-badge) 
+![Stack](https://img.shields.io/badge/DATABASE-Firestore_BigQuery-yellow?style=for-the-badge) 
+![Stack](https://img.shields.io/badge/DEVOPS-Docker_K8s_CI/CD-purple?style=for-the-badge)
 
 # 🚨 Crisis Response & Volunteer Coordination Platform
 
