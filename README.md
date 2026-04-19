@@ -465,50 +465,6 @@ flowchart TD
 
 ---
 
-## 🛠️ Tech Stack
-
-### **Backend & Data**
-| Layer | Technologies |
-|-------|---------------|
-| **Backend** | Node.js, Django, Spring Boot |
-| **Real-time DB** | Firebase Firestore |
-| **Data Warehouse** | Google BigQuery |
-| **Storage** | Google Cloud Storage, AWS S3 |
-| **APIs** | RESTful, GraphQL |
-| **Message Queue** | Cloud Pub/Sub, Kafka |
-
-### **AI/ML**
-| Component | Stack |
-|-----------|-------|
-| **NLP** | TensorFlow, spaCy, NLTK |
-| **Categorization** | Google Cloud AI, Vertex AI |
-| **Matching Algorithm** | Python, scikit-learn |
-| **Predictions** | Time series (Prophet, LSTM) |
-
-### **Frontend & Mobile**
-| Platform | Tech |
-|----------|------|
-| **Mobile App** | Flutter (iOS/Android) |
-| **Web Dashboard** | React, D3.js for maps/charts |
-| **Real-time Updates** | WebSockets, Firebase |
-
-### **DevOps & Infrastructure**
-| Service | Tools |
-|---------|-------|
-| **Containers** | Docker, Kubernetes |
-| **CI/CD** | GitHub Actions, Jenkins |
-| **Cloud** | Google Cloud Platform / AWS |
-| **Monitoring** | Datadog, CloudWatch, Prometheus |
-
-### **Supporting Tools**
-| Category | Tools |
-|----------|-------|
-| **Version Control** | Git, GitHub |
-| **Collaboration** | Jira, Slack, Confluence |
-| **Security** | OAuth 2.0, JWT, encryption |
-
----
-
 ## 📂 Project Structure
 
 ```
