@@ -11,6 +11,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  MyApp({super.key});
+
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
   @override
@@ -50,6 +52,8 @@ class MyApp extends StatelessWidget {
 
 //  AUTH CHECK
 class AuthWrapper extends StatelessWidget {
+  const AuthWrapper({super.key});
+
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
