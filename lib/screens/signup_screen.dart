@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../services/auth_service.dart';
 
 class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
+
   @override
   State<SignupScreen> createState() => _SignupScreenState();
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  final authService = AuthService();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
+  final occupationController = TextEditingController();
+  final experienceController = TextEditingController();
 
   bool isLoading = false;
 
@@ -18,8 +24,10 @@ class _SignupScreenState extends State<SignupScreen> {
     final email = emailController.text.trim();
     final password = passwordController.text.trim();
     final confirmPassword = confirmPasswordController.text.trim();
+    final occupation = occupationController.text.trim();
+    final experience = experienceController.text.trim();
 
-    if (email.isEmpty || password.isEmpty || confirmPassword.isEmpty) {
+    if (email.isEmpty || password.isEmpty || confirmPassword.isEmpty || occupation.isEmpty || experience.isEmpty) {
       showError("Please fill all fields");
       return;
     }
@@ -37,10 +45,7 @@ class _SignupScreenState extends State<SignupScreen> {
     setState(() => isLoading = true);
 
     try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      await authService.signup(email, password, occupation, experience);
 
       if (!mounted) return;
 
@@ -49,10 +54,8 @@ class _SignupScreenState extends State<SignupScreen> {
       );
 
       Navigator.pop(context); // back to login
-    } on FirebaseAuthException catch (e) {
-      if (mounted) showError(getErrorMessage(e));
     } catch (e) {
-      if (mounted) showError("Something went wrong");
+      if (mounted) showError(e.toString());
     }
 
     if (mounted) setState(() => isLoading = false);
@@ -134,6 +137,34 @@ class _SignupScreenState extends State<SignupScreen> {
                         decoration: InputDecoration(
                           labelText: "Email",
                           prefixIcon: Icon(Icons.email),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                      ),
+
+                      SizedBox(height: 15),
+
+                      // OCCUPATION
+                      TextField(
+                        controller: occupationController,
+                        decoration: InputDecoration(
+                          labelText: "Occupation (e.g., Doctor, Student)",
+                          prefixIcon: Icon(Icons.work),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                      ),
+
+                      SizedBox(height: 15),
+
+                      // EXPERIENCE
+                      TextField(
+                        controller: experienceController,
+                        decoration: InputDecoration(
+                          labelText: "Experience Level (e.g., 2 years)",
+                          prefixIcon: Icon(Icons.star),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
