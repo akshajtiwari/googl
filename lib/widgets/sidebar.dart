@@ -36,7 +36,7 @@ class _SidebarState extends State<Sidebar> {
               children: [
                 if (!isCollapsed)
                   const Text(
-                    "NexusAid",
+                    "Helpora",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
