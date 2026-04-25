@@ -38,8 +38,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   int _activeSection = 0;
 
   // ── Section 1: Org Info ──────────────────────────────────────────────
-  final _orgNameCtrl    = TextEditingController(text: 'NexusAid Foundation');
-  final _orgEmailCtrl   = TextEditingController(text: 'admin@nexusaid.org');
+  final _orgNameCtrl    = TextEditingController(text: 'Helpora Foundation');
+  final _orgEmailCtrl   = TextEditingController(text: 'admin@helpora.org');
   final _orgCityCtrl    = TextEditingController(text: 'New Delhi');
   final _orgPhoneCtrl   = TextEditingController(text: '+91 98765 43210');
   bool _orgSaved = false;
@@ -62,10 +62,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   // ── Section 4: Coordinators ──────────────────────────────────────────
   final List<CoordinatorAccount> _coordinators = [
-    CoordinatorAccount(name: 'Priya Nair',    email: 'priya@nexusaid.org',   role: 'Super Admin'),
-    CoordinatorAccount(name: 'Rahul Sharma',  email: 'rahul@nexusaid.org',   role: 'Coordinator'),
-    CoordinatorAccount(name: 'Ananya Gupta',  email: 'ananya@nexusaid.org',  role: 'Coordinator'),
-    CoordinatorAccount(name: 'Vikram Patel',  email: 'vikram@nexusaid.org',  role: 'Viewer',       active: false),
+    CoordinatorAccount(name: 'Priya Nair',    email: 'priya@helpora.org',   role: 'Super Admin'),
+    CoordinatorAccount(name: 'Rahul Sharma',  email: 'rahul@helpora.org',   role: 'Coordinator'),
+    CoordinatorAccount(name: 'Ananya Gupta',  email: 'ananya@helpora.org',  role: 'Coordinator'),
+    CoordinatorAccount(name: 'Vikram Patel',  email: 'vikram@helpora.org',  role: 'Viewer',       active: false),
   ];
 
   @override
