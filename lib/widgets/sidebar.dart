@@ -29,7 +29,6 @@ class _SidebarState extends State<Sidebar> {
       ),
       child: Column(
         children: [
-
           /// 🔥 TOP (LOGO + TOGGLE)
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
@@ -79,8 +78,8 @@ class _SidebarState extends State<Sidebar> {
                               color: Colors.white,
                               fontWeight: FontWeight.w500)),
                       Text("Administrator",
-                          style: TextStyle(
-                              color: Colors.white60, fontSize: 12)),
+                          style:
+                              TextStyle(color: Colors.white60, fontSize: 12)),
                     ],
                   )
                 ]
@@ -99,13 +98,18 @@ class _SidebarState extends State<Sidebar> {
               child: Text(
                 "MAIN",
                 style: TextStyle(
-                    color: Colors.white38,
-                    fontSize: 11,
-                    letterSpacing: 1),
+                    color: Colors.white38, fontSize: 11, letterSpacing: 1),
               ),
             ),
 
           /// NAV ITEMS
+          _NavItem(
+            icon: Icons.report_problem,
+            label: 'Dashboard',
+            route: AppRoutes.dashboard,
+            current: widget.currentRoute,
+            collapsed: isCollapsed,
+          ),
           _NavItem(
             icon: Icons.assignment_ind,
             label: 'Assignments',
@@ -127,20 +131,15 @@ class _SidebarState extends State<Sidebar> {
             current: widget.currentRoute,
             collapsed: isCollapsed,
           ),
-          _NavItem(
-            icon: Icons.assignment,
-            label: 'Assignments',
-            route: '/assignments',
-            current: widget.currentRoute,
-            collapsed: isCollapsed,
-          ),
-          _NavItem(
-            icon: Icons.report_problem,
-            label: 'Needs',
-            route: AppRoutes.needs,
-            current: widget.currentRoute,
-            collapsed: isCollapsed,
-          ),
+
+          // _NavItem(
+          //   icon: Icons.report_problem,
+          //   label: 'Needs',
+          //   route: AppRoutes.needs,
+          //   current: widget.currentRoute,
+          //   collapsed: isCollapsed,
+          // ),
+
           _NavItem(
             icon: Icons.task,
             label: 'Tasks',
@@ -151,7 +150,7 @@ class _SidebarState extends State<Sidebar> {
           _NavItem(
             icon: Icons.analytics,
             label: 'Analytics',
-            route: '/analytics',
+            route: AppRoutes.analytics,
             current: widget.currentRoute,
             collapsed: isCollapsed,
           ),
@@ -159,20 +158,21 @@ class _SidebarState extends State<Sidebar> {
           const Spacer(),
 
           /// FOOTER
+          // ✅ WITH THIS
+          _NavItem(
+            icon: Icons.settings,
+            label: 'Settings',
+            route: AppRoutes.settings,
+            current: widget.currentRoute,
+            collapsed: isCollapsed,
+          ),
           Padding(
-            padding: const EdgeInsets.all(16),
-            child: Row(
-              children: [
-                if (!isCollapsed)
-                  const Text(
-                    "v1.0",
-                    style: TextStyle(color: Colors.white38, fontSize: 12),
-                  ),
-                const Spacer(),
-                const Icon(Icons.settings, color: Colors.white38, size: 18),
-              ],
-            ),
-          )
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+            child: isCollapsed
+                ? const SizedBox()
+                : const Text("v1.0",
+                    style: TextStyle(color: Colors.white38, fontSize: 12)),
+          ),
         ],
       ),
     );
@@ -225,7 +225,6 @@ class _NavItemState extends State<_NavItem> {
           ),
           child: Row(
             children: [
-
               /// ACTIVE INDICATOR BAR
               if (isActive)
                 Container(
@@ -243,9 +242,7 @@ class _NavItemState extends State<_NavItem> {
               Icon(
                 widget.icon,
                 size: 20,
-                color: isActive
-                    ? Colors.white
-                    : Colors.white.withOpacity(0.65),
+                color: isActive ? Colors.white : Colors.white.withOpacity(0.65),
               ),
 
               if (!widget.collapsed) ...[
@@ -256,8 +253,7 @@ class _NavItemState extends State<_NavItem> {
                     color: isActive
                         ? Colors.white
                         : Colors.white.withOpacity(0.65),
-                    fontWeight:
-                        isActive ? FontWeight.w600 : FontWeight.w400,
+                    fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
                   ),
                 ),
               ]
