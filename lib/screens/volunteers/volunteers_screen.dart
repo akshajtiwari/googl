@@ -27,24 +27,6 @@ class _VolunteersScreenState extends State<VolunteersScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final filtered = _filteredVolunteers;
-    final selected = _selected;
-
-    final availableCount = mockVolunteers
-        .where((v) => v.availability == VolunteerAvailability.available)
-        .length;
-    final busyCount =
-        mockVolunteers.where((v) => v.availability == VolunteerAvailability.busy).length;
-    final offlineCount = mockVolunteers
-        .where((v) => v.availability == VolunteerAvailability.offline)
-        .length;
-    final averageRating = mockVolunteers.isEmpty
-        ? 0.0
-        : mockVolunteers
-                .map((v) => v.rating)
-                .reduce((a, b) => a + b) /
-            mockVolunteers.length;
-
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FA), // Google Cloud background
       body: Row(

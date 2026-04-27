@@ -36,7 +36,7 @@ class _SidebarState extends State<Sidebar> {
               children: [
                 if (!isCollapsed)
                   const Text(
-                    "NexusAid",
+                    "Helpora",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
@@ -151,6 +151,22 @@ class _SidebarState extends State<Sidebar> {
             icon: Icons.analytics,
             label: 'Analytics',
             route: AppRoutes.analytics,
+            current: widget.currentRoute,
+            collapsed: isCollapsed,
+          ),
+
+          _NavItem(
+            icon: Icons.create,
+            label: 'Create Form',
+            route: AppRoutes.createForm,
+            current: widget.currentRoute,
+            collapsed: isCollapsed,
+          ),
+
+          _NavItem(
+            icon: Icons.chat,
+            label: 'AI Chatbot',
+            route: AppRoutes.aiChat,
             current: widget.currentRoute,
             collapsed: isCollapsed,
           ),
