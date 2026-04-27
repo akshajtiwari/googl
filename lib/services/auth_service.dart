@@ -1,24 +1,19 @@
-class AuthService {
-  // Default admin credentials — change these in production
-  static const String adminUsername = 'admin';
-  static const String adminPassword = 'admin123';
+import 'package:flutter/material.dart';
+import 'api_service.dart';
 
-  static bool isLoggedIn = false;
+class AuthService extends ChangeNotifier {
+  String? token;
 
-  // API keys stored in-memory for this demo
-  static String? geminiApiKey;
-  static String? googleApiKey;
+  bool get loggedIn => token != null;
 
-  static Future<bool> login(String username, String password) async {
-    // simple credential check (replace with secure auth in production)
-    if (username == adminUsername && password == adminPassword) {
-      isLoggedIn = true;
-      return true;
-    }
-    return false;
+  Future<void> login(String username, String password) async {
+    final data = await ApiService.login(username, password);
+    token = data['access_token'] as String?;
+    notifyListeners();
   }
 
-  static void logout() {
-    isLoggedIn = false;
+  void logout() {
+    token = null;
+    notifyListeners();
   }
 }

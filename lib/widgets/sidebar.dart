@@ -155,22 +155,6 @@ class _SidebarState extends State<Sidebar> {
             collapsed: isCollapsed,
           ),
 
-          _NavItem(
-            icon: Icons.create,
-            label: 'Create Form',
-            route: AppRoutes.createForm,
-            current: widget.currentRoute,
-            collapsed: isCollapsed,
-          ),
-
-          _NavItem(
-            icon: Icons.chat,
-            label: 'AI Chatbot',
-            route: AppRoutes.aiChat,
-            current: widget.currentRoute,
-            collapsed: isCollapsed,
-          ),
-
           const Spacer(),
 
           /// FOOTER

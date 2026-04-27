@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../../core/routes.dart';
 import '../../services/auth_service.dart';
 
@@ -14,24 +15,22 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _passCtrl = TextEditingController();
   bool _loading = false;
 
-  @override
-  void dispose() {
-    _userCtrl.dispose();
-    _passCtrl.dispose();
-    super.dispose();
-  }
-
-  Future<void> _attemptLogin() async {
+  Future<void> _submit() async {
     setState(() => _loading = true);
-    final success =
-        await AuthService.login(_userCtrl.text.trim(), _passCtrl.text);
-    setState(() => _loading = false);
-    if (success) {
-      Navigator.pushReplacementNamed(context, AppRoutes.dashboard);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Invalid credentials')),
-      );
+    final auth = Provider.of<AuthService>(context, listen: false);
+    try {
+      await auth.login(_userCtrl.text.trim(), _passCtrl.text);
+      if (auth.loggedIn) {
+        Navigator.pushReplacementNamed(context, AppRoutes.dashboard);
+      } else {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text('Login failed')));
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Login error: $e')));
+    } finally {
+      setState(() => _loading = false);
     }
   }
 
@@ -39,48 +38,37 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 420),
+        child: SizedBox(
+          width: 420,
           child: Card(
-            elevation: 8,
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            elevation: 6,
             child: Padding(
               padding: const EdgeInsets.all(24.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const Text('Admin Login',
+                  const Text('Admin Portal Login',
                       style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
-                  const SizedBox(height: 12),
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 16),
                   TextField(
-                    controller: _userCtrl,
-                    decoration: const InputDecoration(labelText: 'Username'),
-                  ),
+                      controller: _userCtrl,
+                      decoration: const InputDecoration(labelText: 'Username')),
                   const SizedBox(height: 8),
                   TextField(
-                    controller: _passCtrl,
-                    obscureText: true,
-                    decoration: const InputDecoration(labelText: 'Password'),
-                    onSubmitted: (_) => _attemptLogin(),
-                  ),
-                  const SizedBox(height: 20),
+                      controller: _passCtrl,
+                      decoration: const InputDecoration(labelText: 'Password'),
+                      obscureText: true),
+                  const SizedBox(height: 16),
                   ElevatedButton(
-                    onPressed: _loading ? null : _attemptLogin,
+                    onPressed: _loading ? null : _submit,
                     child: _loading
                         ? const SizedBox(
-                            height: 16,
-                            width: 16,
-                            child: CircularProgressIndicator(
-                                strokeWidth: 2, color: Colors.white))
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(strokeWidth: 2))
                         : const Text('Login'),
                   ),
-                  const SizedBox(height: 12),
-                  const Text(
-                      'Tip: default admin credentials are admin / admin123',
-                      style: TextStyle(fontSize: 12, color: Colors.black54)),
                 ],
               ),
             ),
