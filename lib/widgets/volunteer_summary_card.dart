@@ -59,10 +59,10 @@ class VolunteerSummaryCard extends StatelessWidget {
           ),
           const SizedBox(width: 48),
           _RingChart(
-            value: vol.availability,
+            value: vol.availabilityRate,
             color: const Color(0xFFF9AB00), // Google Yellow
             label: 'Availability',
-            display: '${(vol.availability * 100).toInt()}%',
+            display: '${(vol.availabilityRate * 100).toInt()}%',
           ),
           const SizedBox(width: 48),
           

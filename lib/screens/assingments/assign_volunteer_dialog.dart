@@ -44,9 +44,6 @@ class _AssignVolunteerDialogState extends State<AssignVolunteerDialog> {
   double _scoreFor(String id) =>
       _ranked.where((r) => r.volunteer.id == id).firstOrNull?.score ?? 0;
 
-  int _matchesFor(String id) =>
-      _ranked.where((r) => r.volunteer.id == id).firstOrNull?.skillMatches ?? 0;
-
   @override
   Widget build(BuildContext context) {
     return Dialog(
@@ -143,7 +140,6 @@ class _AssignVolunteerDialogState extends State<AssignVolunteerDialog> {
                   final v = _displayList[i];
                   final selected = _selectedIds.contains(v.id);
                   final score = _scoreFor(v.id);
-                  final matches = _matchesFor(v.id);
                   final isTop = _showSmartOnly && i == 0;
 
                   return GestureDetector(
