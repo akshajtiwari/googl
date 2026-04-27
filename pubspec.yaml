@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^13.0.0
+  pdf: ^3.10.8
+  printing: ^5.12.0
   fl_chart: ^0.68.0
   flutter_map: ^6.1.0
   latlong2: ^0.9.0
