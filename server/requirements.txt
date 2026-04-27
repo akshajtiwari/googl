@@ -1,0 +1,10 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+python-dotenv==1.0.0
+passlib[bcrypt]==1.7.4
+PyJWT==2.8.0
+requests==2.31.0
+
+# Optional: google generative AI client (install and configure if you use it)
+# google-generativeai
+
