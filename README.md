@@ -578,8 +578,8 @@ npm start
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Shukla%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-shukla-877705285/?skipRedirect=true) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Akshaj%20Tiwari%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshaj-tiwari/) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aniruddh%20Srivastava%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aniruddh-srivastav-058312365) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush%20Srivastava%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srivastavaaarush/) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aniruddh%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aniruddh-srivastav-058312365) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aarush%20-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srivastavaaarush/) 
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-LeeChristmas-E10600?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a1a)](https://github.com/AnkitShukla-arch)
