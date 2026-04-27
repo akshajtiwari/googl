@@ -15,7 +15,7 @@ class NGOAdminApp extends StatelessWidget {
       title: 'Smart Resource Allocation',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      initialRoute: AppRoutes.dashboard,
+      initialRoute: AppRoutes.login,
       routes: AppRoutes.routes,
     );
   }

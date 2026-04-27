@@ -38,4 +38,6 @@ class VolunteerMockData {
       status: VolunteerStatus.onLeave, completionRate: 0.75, availabilityRate: 0.40,
     ),
   ];
+
+  static VolunteerEntry get selectedVolunteer => entries.first;
 }

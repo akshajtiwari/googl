@@ -29,6 +29,7 @@ class VolunteerEntry {
   final double availabilityRate;
   final List<TaskLog> taskLog;
   bool isChecked;
+  bool isExpanded;
 
   VolunteerEntry({
     required this.id,
@@ -48,5 +49,6 @@ class VolunteerEntry {
     required this.availabilityRate,
     this.taskLog = const [],
     this.isChecked = false,
+    this.isExpanded = false,
   });
 }
