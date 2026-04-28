@@ -15,16 +15,12 @@ class NGOAdminApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => AuthService(),
-      child: Consumer<AuthService>(
-        builder: (context, auth, _) {
-          return MaterialApp(
-            title: 'Smart Resource Allocation',
-            debugShowCheckedModeBanner: false,
-            theme: AppTheme.theme,
-            initialRoute: auth.loggedIn ? AppRoutes.dashboard : AppRoutes.login,
-            routes: AppRoutes.routes,
-          );
-        },
+      child: MaterialApp(
+        title: 'Smart Resource Allocation',
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.theme,
+        initialRoute: AppRoutes.dashboard,
+        routes: AppRoutes.routes,
       ),
     );
   }
